@@ -10,6 +10,9 @@
 :root {
   --text-color: #fff;
   --background-color: #000000;
+  --background-header: #232323;
+  --color-secondary: #ff4242;
+  --color-text-secondary: #ccc;
 }
 
 body {
@@ -17,23 +20,81 @@ body {
   color: var(--text-color);
 }
 
+/* Header */
 header {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  background-color: var(--background-header);
+  height: 56px;
 }
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   list-style: none;
 }
 
-
-
 .links {
   color: var(--color-text);
   text-decoration: none;
-  padding: 80px;
+  padding: 20px;
+}
+
+.links:hover {
+  color: var(--color-secondary);
+}
+
+/* Main */
+.container-principal {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 120px;
+}
+
+.container-music {
+  display: flex;
+  flex-direction: column;
+  margin-top:  100px;
+}
+
+.titulo-musica {
+  color: var(--color-secondary);
+  /* text-align: center; */
+}
+
+.texto-musica {
+  color: var(--color-text-secondary);
+  margin-top: 10px;
+}
+
+.button-container {
+  margin-top: 10px;
+}
+
+.btn-music {
+  background-color: var(--color-secondary);
+  color: var(--text-color);
+  width: 150px;
+  height: 40px;
+  font-size: 1rem;
+  border-radius: 30px;
+  border: 1px solid var(--text-color);
+}
+
+.btn-music:hover {
+  background-color: var(--background-header);
+}
+
+.icons {
+  margin-top: 20px;
+  padding: 20px;
+  color: var(--color-secondary);
+}
+
+.img-phone {
+    width: 500px;
+    height:500px;
+    border-radius: 10px;
 }
